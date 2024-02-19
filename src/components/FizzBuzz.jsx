@@ -9,7 +9,7 @@ function FizzBuzz() {
     const handleFizzBuzz = () => {
       let output = '';
   
-      if (number % 3 === 0 && number % 5 === 0) {
+      if (number % 15 === 0) {
         output = 'FizzBuzz';
       } else if (number % 3 === 0) {
         output = 'Fizz';
