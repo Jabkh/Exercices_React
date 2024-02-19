@@ -23,11 +23,11 @@ function FizzBuzz() {
     };
   
     const incrementNumber = () => {
-      setNumber(prevNumber => prevNumber + 1);
+      setNumber(prevNumber => prevNumber + 1 );
     };
   
     const decrementNumber = () => {
-      setNumber(prevNumber => prevNumber - 1);
+      setNumber(prevNumber => (prevNumber === 0) ? prevNumber : prevNumber - 1);
     };
   
     return (
