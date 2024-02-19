@@ -1,0 +1,29 @@
+/* fizzbuzz.css */
+
+.fizzbuzz {
+    width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .fizzbuzz input[type="text"] {
+    width: calc(100% - 90px);
+    margin-right: 10px;
+    padding: 5px;
+  }
+  
+  .fizzbuzz button {
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  .fizzbuzz button:hover {
+    background-color: #0056b3;
+  }
+  
