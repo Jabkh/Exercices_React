@@ -14,12 +14,14 @@ const ContactForm = ({ onAddContact }) => {
   return (
     <form onSubmit={handleSubmit}>
       <input
+        required
         type="text"
         placeholder="Username"
         value={username}
         onChange={(e) => setUserName(e.target.value)}
       />
       <input
+        required
         type="email"
         placeholder="Email"
         value={email}

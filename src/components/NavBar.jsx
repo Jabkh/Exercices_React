@@ -18,6 +18,12 @@ const Navbar = () => {
         <li>
           <Link to="/exo3">FizzBuzz</Link>
         </li>
+        <li>
+          <Link to="/exo6">ContactApp</Link>
+        </li>
+        <li>
+          <Link to="/exo7">RefApp</Link>
+        </li>
       </ul>
     </nav>
   );
