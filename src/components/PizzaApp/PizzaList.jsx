@@ -1,6 +1,6 @@
 import React, { useState, useContext } from 'react';
 import { Button } from 'react-bootstrap';
-import PizzaContext from './PizzaContext';
+import PizzaContext from './context/PizzaContext';
 import PizzaDetailModal from './PizzaDetailModal';
 
 const PizzaList = () => {

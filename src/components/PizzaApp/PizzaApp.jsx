@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { PizzaProvider } from './PizzaContext';
+import { PizzaProvider } from './context/PizzaContext';
 import PizzaForm from './PizzaForm';
 import PizzaList from './PizzaList';
 

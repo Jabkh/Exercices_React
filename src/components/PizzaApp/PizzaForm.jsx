@@ -1,6 +1,6 @@
 // PizzaForm.js
 import React, { useContext, useState } from 'react';
-import PizzaContext from './PizzaContext';
+import PizzaContext from './context/PizzaContext';
 
 const PizzaForm = () => {
   const { addPizza } = useContext(PizzaContext);
