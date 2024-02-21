@@ -14,12 +14,13 @@
   }
   
   .list-container li span {
+    text-align: center;
+    background-color: rgb(174, 174, 174);
     flex-grow: 1;
     font-size: 16px;
+    border-radius: 5% 5%;
   }
-  
   .list-container li button {
-    background-color: #dc3545;
     color: white;
     border: none;
     padding: 4px 8px;
@@ -28,14 +29,15 @@
     cursor: pointer;
   }
   
-  .list-container li button:hover {
+  .list-container li .delete {
+    background-color: #dc3545;
+  }
+  
+  
+  .list-container li .delete:hover {
     background-color: #c82333;
   }
   
-  span{
-    text-align: center;
-  }
-
   .warning {
     background-color: #FFCC00; 
   }

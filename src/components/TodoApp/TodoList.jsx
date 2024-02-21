@@ -9,12 +9,13 @@ const TodoList = ({ todos, onDelete, onToggle }) => {
         {todos.map(todo => (
           <li key={todo.id}>
             <span
-              className={todo.completed ? 'completed success' : 'warning'} /* Ajoutez des classes en fonction de l'état completed */
-              onClick={() => onToggle(todo.id)}
+              
             >
               {todo.text}
             </span>
-            <button onClick={() => onDelete(todo.id)}>Supprimer</button>
+            <button className='delete' onClick={() => onDelete(todo.id)}>Supprimer</button>
+            <button className={todo.completed ? 'completed success' : 'warning'} /* Ajoutez des classes en fonction de l'état completed */
+              onClick={() => onToggle(todo.id)}>{todo.completed ? 'Fait' : 'À faire'}</button>
           </li>
         ))}
       </ul>
