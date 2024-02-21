@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-import '../../assets/todoform.css'; // Importez le fichier CSS
+import '../../assets/todoform.css';
 
 const TodoForm = ({ onAddTodo }) => {
   const textRef = useRef(null); // Utilisation de useRef pour créer une référence à l'élément input

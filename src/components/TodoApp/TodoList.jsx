@@ -1,6 +1,5 @@
-// TodoList.js
 import React from 'react';
-import '../../assets/todolist.css'; // Importez le fichier CSS
+import '../../assets/todolist.css';
 
 const TodoList = ({ todos, onDelete, onToggle }) => {
   return (
