@@ -1,0 +1,45 @@
+.list-container {
+    margin-top: 20px;
+  }
+  
+  .list-container ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .list-container li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+  }
+  
+  .list-container li span {
+    flex-grow: 1;
+    font-size: 16px;
+  }
+  
+  .list-container li button {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 4px 8px;
+    border-radius: 4px;
+    margin-left: 8px;
+    cursor: pointer;
+  }
+  
+  .list-container li button:hover {
+    background-color: #c82333;
+  }
+  
+  span{
+    text-align: center;
+  }
+
+  .warning {
+    background-color: #FFCC00; 
+  }
+
+  .success {
+    background-color: #28a745; 
+  }

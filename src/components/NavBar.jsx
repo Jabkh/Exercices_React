@@ -10,7 +10,7 @@ const Navbar = () => {
           <Link to="/">Accueil</Link>
         </li>
         <li>
-          <Link to="/todo">Todo List</Link>
+          <Link to="/todo">Exercice 1</Link>
         </li>
         <li>
           <Link to="/pokemon">Appel Api</Link>
@@ -23,6 +23,9 @@ const Navbar = () => {
         </li>
         <li>
           <Link to="/exo7">RefApp</Link>
+        </li>
+        <li>
+          <Link to="/exo8">TodoApp</Link>
         </li>
       </ul>
     </nav>
