@@ -9,6 +9,7 @@ import ContactApp from './components/ContactApp/ContactApp';
 import RefApp from '../src/components/ContactRef/RefApp';
 import TodoApp from '../src/components/TodoApp/TodoApp';
 import Authentication from '../src/components/Authentication/Authentication';
+import PizzaApp from './components/PizzaApp/PizzaApp';
 
 const RoutesComponent = () => {
     return (
@@ -24,6 +25,7 @@ const RoutesComponent = () => {
             <Route path="/exo7" element={<RefApp />} />
             <Route path="/exo8" element={<TodoApp />} />
             <Route path="/auth" element={<Authentication />} />
+            <Route path="/exo9" element={<PizzaApp />} />
           </Routes>
         </div>
       </Router>

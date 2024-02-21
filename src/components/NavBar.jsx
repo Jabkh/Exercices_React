@@ -30,6 +30,9 @@ const Navbar = () => {
         <li>
           <Link to="/auth">Authentication</Link>
         </li>
+        <li>
+          <Link to="/exo9">ExoContext</Link>
+        </li>
       </ul>
     </nav>
   );
