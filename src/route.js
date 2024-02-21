@@ -8,6 +8,7 @@ import FizzBuzz from './components/FizzBuzz';
 import ContactApp from './components/ContactApp/ContactApp';
 import RefApp from '../src/components/ContactRef/RefApp';
 import TodoApp from '../src/components/TodoApp/TodoApp';
+import Authentication from '../src/components/Authentication/Authentication';
 
 const RoutesComponent = () => {
     return (
@@ -22,6 +23,7 @@ const RoutesComponent = () => {
             <Route path="/exo6" element={<ContactApp />} />
             <Route path="/exo7" element={<RefApp />} />
             <Route path="/exo8" element={<TodoApp />} />
+            <Route path="/auth" element={<Authentication />} />
           </Routes>
         </div>
       </Router>

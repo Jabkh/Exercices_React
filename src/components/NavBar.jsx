@@ -27,6 +27,9 @@ const Navbar = () => {
         <li>
           <Link to="/exo8">TodoApp</Link>
         </li>
+        <li>
+          <Link to="/auth">Authentication</Link>
+        </li>
       </ul>
     </nav>
   );
