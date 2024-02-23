@@ -1,0 +1,36 @@
+/* styles.css */
+
+.container {
+    padding: 20px;
+  }
+  
+  .ecommerce-grid {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .product-grid {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .product-card {
+    width: 30%;
+    margin: 10px;
+  }
+  
+  .cart-section {
+    width: 30%;
+  }
+  
+  .custom-button {
+    background-color: #3498db;
+    color: #d4d4d4;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .bootstrap-button {
+    margin-top: 10px;
+  }

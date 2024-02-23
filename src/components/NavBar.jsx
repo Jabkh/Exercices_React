@@ -33,6 +33,9 @@ const Navbar = () => {
         <li>
           <Link to="/exo9">ExoContext</Link>
         </li>
+        <li>
+          <Link to="/exo10">Ecommerce</Link>
+        </li>
       </ul>
     </nav>
   );
