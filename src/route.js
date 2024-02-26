@@ -17,7 +17,7 @@ const RoutesComponent = () => {
       <Router>
         <div>
           <Navbar />
-          <Routes> {/* Utilisez Routes ici au lieu de Switch */}
+          <Routes> {/* Utilisez "Routes" ici et dedans des "Route" */}
             <Route path="/pokemon" element={<PokemonPage />} /> {/* Utilisez l'attribut "element" pour spécifier le composant */}
             <Route path="/todo" element={<TodoList />} />
             <Route path="/" element={<HomePage />} />

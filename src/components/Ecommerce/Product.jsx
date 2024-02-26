@@ -9,8 +9,8 @@ const Product = ({ product }) => {
       <h3>{product.name}</h3>
       <p>{product.description}</p>
       <p>Prix: {product.price} €</p>
-      <p>Quantité: {product.quantity || 0}</p>
-      <button onClick={() => addToCart(product)}>Ajouter au panier</button>
+      <p>Quantité: {product.quantity || "disponible"}</p>
+      <button className="btn btn-primary bootstrap-button" onClick={() => addToCart(product)}>Ajouter au panier</button>
     </div>
   );
 };

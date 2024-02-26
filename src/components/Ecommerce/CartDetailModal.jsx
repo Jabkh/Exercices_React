@@ -1,28 +1,26 @@
 import React from 'react';
 import { Modal, Button } from 'react-bootstrap';
 
-const CartDetailModal = ({ cart, show, handleClose }) => {
+const CartDetailModal = ({ show, onHide, product }) => {
   return (
-    <Modal show={show} onHide={handleClose}>
+    <Modal show={show} onHide={onHide}>
       <Modal.Header closeButton>
-        <Modal.Title>Détails du Panier</Modal.Title>
+        <Modal.Title>Détails du produit</Modal.Title>
       </Modal.Header>
       <Modal.Body>
-        <ul>
-          {cart.map((item, index) => (
-            <li key={index}>
-              <p><strong>Nom:</strong> {item.name}</p>
-              <p><strong>Prix:</strong> {item.price} €</p>
-              {/* Ajout d'autres détails de l'item si nécessaire */}
-            </li>
-          ))}
-        </ul>
+        <h2>{product.name}</h2>
+        <p>Prix : {product.price}</p>
+        <p>Ingrédients : {product.ingredients.join(', ')}</p>
       </Modal.Body>
       <Modal.Footer>
-        <Button variant="secondary" onClick={handleClose}>Fermer</Button>
+        <Button variant="secondary" onClick={onHide}>
+          Fermer
+        </Button>
       </Modal.Footer>
     </Modal>
   );
 };
 
 export default CartDetailModal;
+
+// Présent pour afficher le détail produit dans une autre modal pas encore utilisée

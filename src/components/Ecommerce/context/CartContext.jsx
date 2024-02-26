@@ -5,7 +5,6 @@ const CartContext = createContext();
 export const CartProvider = ({ children }) => {
   const [cart, setCart] = useState([]);
 
-  // Function to add a product to the cart
   const addToCart = (product) => {
     const existingItem = cart.find((item) => item.id === product.id);
 
@@ -19,19 +18,42 @@ export const CartProvider = ({ children }) => {
     }
   };
 
-  // Function to remove a product from the cart
   const removeFromCart = (productId) => {
     const updatedCart = cart.filter((item) => item.id !== productId);
     setCart(updatedCart);
   };
 
-  // Function to calculate the total amount in the cart
+
+  const incrementQuantity = (id) => {
+    // Mappez sur le panier pour trouver l'article correspondant à l'ID fourni
+    const updatedCart = cart.map((item) =>
+      item.id === id ? { ...item, quantity: item.quantity + 1 } : item
+    );
+    // Mettez à jour le panier avec la quantité incrémentée
+    setCart(updatedCart);
+  };
+  
+  const decrementQuantity = (id) => {
+    // Recherchez l'article correspondant à l'ID fourni dans le panier
+    const existingItem = cart.find((item) => item.id === id);
+    // Vérifiez si l'article existe et si la quantité est supérieure à 0
+    if (existingItem && existingItem.quantity > 0) {
+      // Mappez sur le panier pour décrémenter la quantité de l'article correspondant à l'ID
+      const updatedCart = cart.map((item) =>
+        item.id === id ? { ...item, quantity: item.quantity - 1 } : item
+      );
+      // Mettez à jour le panier avec la quantité décrémentée
+      setCart(updatedCart);
+    }
+  };
+  
+
   const calculateTotal = () => {
     return cart.reduce((total, item) => total + item.price * item.quantity, 0).toFixed(2);
   };
 
   return (
-    <CartContext.Provider value={{ cart, addToCart, removeFromCart, calculateTotal }}>
+    <CartContext.Provider value={{ cart, addToCart, removeFromCart, calculateTotal, incrementQuantity, decrementQuantity }}>
       {children}
     </CartContext.Provider>
   );

@@ -22,7 +22,7 @@ const PizzaDetailModal = ({ pizza, show, handleClose }) => {
         </ul>
       </Modal.Body>
       <Modal.Footer>
-        <Button variant="secondary" onClick={handleClose}>Fermer</Button>
+        <Button variant="danger" onClick={handleClose}>Fermer</Button>
       </Modal.Footer>
     </Modal>
   );
