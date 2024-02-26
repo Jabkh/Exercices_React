@@ -48,12 +48,6 @@
         "name": "Product 10",
         "description": "Description of Product 10",
         "price": 19.99
-      },
-      {
-        "id": 11,
-        "name": "Product 11",
-        "description": "Description of Product 11",
-        "price": 24.99
-      }
+      }      
   ]
   
