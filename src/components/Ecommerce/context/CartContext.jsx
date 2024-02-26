@@ -23,7 +23,6 @@ export const CartProvider = ({ children }) => {
     setCart(updatedCart);
   };
 
-
   const incrementQuantity = (id) => {
     // Mappez sur le panier pour trouver l'article correspondant à l'ID fourni
     const updatedCart = cart.map((item) =>
